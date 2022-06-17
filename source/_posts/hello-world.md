@@ -1,38 +1,39 @@
 ---
-title: Hello World
+title: 06/17날 강의내용
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-## Quick Start
-
-### Create a new post
-
+## Blog 만들기
+hexo를 이용한 Blog 만들기
+### 1. github에서 blog repositories 만들기
 ``` bash
-$ hexo new "My New Post"
+$ hexo init blog
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+### 2. github에서 ID.github.io 폴더만들기
 
-### Run server
+### 3. blog 폴더를 파이참으로 실행
 
 ``` bash
-$ hexo server
+$ cd blog
+$ npm install
+$ npm install hexo-server --save
+$ npm install hexo-deployer-git --save
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
+### 4. _config.yml파일 더블클릭
+파일중간에 있는 
+``` bash 
+$ url: @@@
+```
+을
+``` bash
+$ url: https://ID.github.io
+```
+로 수정
 
-### Generate static files
+### 5. 테스트 및 배포
 
 ``` bash
+$ hexo server  #테스트
 $ hexo generate
+$ hexo deploy  #배포
 ```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
