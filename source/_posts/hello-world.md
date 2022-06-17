@@ -4,6 +4,7 @@ title: 06/17날 강의내용
 ## Blog 만들기
 hexo를 이용한 Blog 만들기
 ### 1. github에서 blog repositories 만들기
+만든 후 git bash에서 
 ``` bash
 $ hexo init blog
 ```
