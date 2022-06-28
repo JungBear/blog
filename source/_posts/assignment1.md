@@ -93,24 +93,24 @@ def personal_info(name,age,address):
   print('이름 : ',name)
   print('나이 : ',age)
   print('주소 : ',address)
-personal_info('정상필',26,'인천')
+personal_info('홍길동',30,'경기')
 ```
 
-    이름 :  정상필
-    나이 :  26
-    주소 :  인천
+    이름 :  홍길동
+    나이 :  30
+    주소 :  경기
     
 
 ### 키워드 인수 방식
 
 
 ```python
-personal_info(name='정상필',age=26,address='인천') # 순서를 맞추지 않아도 입력가능
+personal_info(name='홍길동',age=30,address='경기') # 순서를 맞추지 않아도 입력가능
 ```
 
-    이름 :  정상필
-    나이 :  26
-    주소 :  인천
+    이름 :  홍길동
+    나이 :  30
+    주소 :  경기
     
 
 ### 딕셔너리 언패킹 
@@ -126,13 +126,13 @@ def personal_info(name,age,address):
 
 
 ```python
-x={'name': '정상필', 'age':26, 'address':'인천'}
+x={'name': '홍길동', 'age':30, 'address':'경기'}
 personal_info(**x) # *을 한번 사용하면 키가 출력, 두번사용하면 value를 출력
 ```
 
-    이름 :  정상필
-    나이 :  26
-    주소 :  인천
+    이름 :  홍길동
+    나이 :  30
+    주소 :  경기
     
 
 ### 키워드 인수를 사용하는 가변 인수 함수 만들기 
@@ -150,25 +150,25 @@ def personal_info(**kwargs):
 
 
 ```python
-personal_info(name='정상필')
+personal_info(name='홍길동')
 print('-------------')
-personal_info(name='정상필', age=26,address='인천')
+personal_info(name='홍길동', age=30,address='경기')
 ```
 
-    name: 정상필
+    name: 홍길동
     -------------
-    name: 정상필
-    age: 26
-    address: 인천
+    name: 홍길동
+    age: 30
+    address: 경기
     
 
 
 ```python
-x={'name':'정상필'}
+x={'name':'홍길동'}
 personal_info(**x)
 ```
 
-    name: 정상필
+    name: 홍길동
     
 
 - 보통 특정 키가 있는지 확인한뒤 기능을 만든다
