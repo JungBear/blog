@@ -17,7 +17,7 @@ date: '2022-07-19'
 - PL/SQL (분석가10% + 개발자70% +DBA)
 - DB분석
 
-```python
+```SQL
 SELECT 컬럼명
 FROM 테이블명
 WHERE 조건식
@@ -26,7 +26,7 @@ ORDER BY 정렬기준
 
 - 사용자 설정 제약조건 확인
 
-```python
+```SQL
 SELECT constraint_name
        , constraint_type
        , table_name
@@ -38,7 +38,7 @@ WHERE table_name = 'EX2_6';
 ![Untitled](/images/day07/day0719/oracle1.png)
 - 테이블 정보 확인
 
-```python
+```SQL
 DESC 컬럼명;
 ```
 
@@ -64,43 +64,43 @@ DESC 컬럼명;
 
 - 컬럼명 변경
 
-```python
+```SQL
 ALTER TABLE 테이블명 RENAME COLUMN 바꾸고싶은 컬럼명 TO 변경후 컬럼명;
 ```
 
 - 타입변경
 
-```python
+```SQL
 ALTER TABLE 테이블명 MODIFY 컬럼명 타입;
 ```
 
 - 컬럼 추가
 
-```python
+```SQL
 ALTER TABLE 테이블명 ADD 컬럼명 타입;
 ```
 
 - 컬럼 삭제
 
-```python
-ALTER TABLE 테이블명 DROP COLUMN COL3;
+```SQL
+ALTER TABLE 테이블명 DROP COLUMN 컬럼명;
 ```
 
 - 제약조건 추가하기
 
-```python
+```SQL
 ALTER TABLE 테이블명 ADD CONSTRAINTS 제약조건이름 PRIMARY KEY (컬럼명);
 ```
 
 - 제약조건 삭제
 
-```python
+```SQL
 ALTER TABLE 테이블 명 DROP CONSTRAINTS 제약조건이름;
 ```
 
 - 테이블 복사
 
-```python
+```SQL
 CREATE TABLE 테이블명 AS
 SELECT * FROM 복사당할 테이블명;
 ```
@@ -110,7 +110,7 @@ SELECT * FROM 복사당할 테이블명;
 - 테이블이나 또다른 뷰를 참조하는 객체
 - 뷰생성
 
-```python
+```SQL
 CREATE OR REPLACE VIEW 테이블명 AS
 SELECT 컬럼명
 FROM 테이블명
@@ -119,6 +119,6 @@ WHERE 조건식
 
 - 뷰 삭제
 
-```python
+```SQL
 DROP VIEW 테이블명
 ```
