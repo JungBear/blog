@@ -11,12 +11,12 @@ date: '2022-07-27'
 # WSL2(Windows Subsystem for Linux)
 
 - windows 기능 켜기/끄기에서
-![Untitled](\images\day07\WSL2\Untitled.png)
+![Untitled](/images/day07/WSL2/Untitled.png)
 
 - windows 하이퍼바이저 플랫폼 체크 후 재부팅
 - PC 정보에서 windows 버전정보 확인
 
-![Untitled](\images\day07\WSL2\Untitled%201.png)
+![Untitled](/images/day07/WSL2/Untitled%201.png)
 
 - powershell 관리자권한 실행 후 코드 실행
 
@@ -34,12 +34,12 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 ```
 
-![Untitled](\images\day07\WSL2\Untitled%202.png)
+![Untitled](/images/day07/WSL2/Untitled%202.png)
 
 - microsoft store 실행
 - ubunto 20.04.4 LTS 다운
 
-![Untitled](\images\day07\WSL2\Untitled%203.png)
+![Untitled](/images/day07/WSL2/Untitled%203.png)
 
 - powershell에서 버전확인
 
@@ -53,45 +53,45 @@ wsl -l -v
 wsl --set-default-version 2
 ```
 
-![Untitled](\images\day07\WSL2\Untitled%204.png)
+![Untitled](/images/day07/WSL2/Untitled%204.png)
 
 - 버전이 1일때
 
-![Untitled](\images\day07\WSL2\Untitled%205.png)
+![Untitled](/images/day07/WSL2/Untitled%205.png)
 
 - 지우고 처음부터 진행
 
-![Untitled](\images\day07\WSL2\Untitled%206.png)
+![Untitled](/images/day07/WSL2/Untitled%206.png)
 
 ### VSCode 와 WSL연결
 
 - 시스템 환경 변수 변경에서 Path에서 VSCode 확인
 
-![Untitled](\images\day07\WSL2\Untitled%207.png)
+![Untitled](/images/day07/WSL2/Untitled%207.png)
 
-![Untitled](\images\day07\WSL2\Untitled%208.png)
+![Untitled](/images/day07/WSL2/Untitled%208.png)
 
-![Untitled](\images\day07\WSL2\Untitled%209.png)
+![Untitled](/images/day07/WSL2/Untitled%209.png)
 
 - VScode 확인
 - 시스템에서도 확인 후 없으면 추가
 
-![Untitled](\images\day07\WSL2\Untitled%2010.png)
+![Untitled](/images/day07/WSL2/Untitled%2010.png)
 
 - VScode에서 remote wsl설치
 
-![Untitled](\images\day07\WSL2\Untitled%2011.png)
+![Untitled](/images/day07/WSL2/Untitled%2011.png)
 
 - VScode 재실행
 
-![Untitled](\images\day07\WSL2\Untitled%2012.png)
+![Untitled](/images/day07/WSL2/Untitled%2012.png)
 
 - microsoft Store에서 windows terminal 다운
 - ubuntu 실행
 
-![Untitled](\images\day07\WSL2\Untitled%2013.png)
+![Untitled](/images/day07/WSL2/Untitled%2013.png)
 
-![Untitled](\images\day07\WSL2\Untitled%2014.png)
+![Untitled](/images/day07/WSL2/Untitled%2014.png)
 
 - 경로 home/human/airflow
 
@@ -99,7 +99,7 @@ wsl --set-default-version 2
 mkdir airflow
 ```
 
-![Untitled](\images\day07\WSL2\Untitled%2015.png)
+![Untitled](/images/day07/WSL2/Untitled%2015.png)
 
 - 처음 진행 시
 
